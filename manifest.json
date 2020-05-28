@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name":"passei-unlock",
+    "version": "0.1.0",
+    "description":"Extensão usada para burla bloqueio do passei direto",
+    "icons":{
+        "16":"icons/unlock.png",
+        "48": "icons/unlock.png",
+        "128": "icons/unlock.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.passeidireto.com/*"
+            ],
+            "js": [
+                "scripts/remove_class.js"
+            ]
+    
+        }
+    ]
+    
+
+}
